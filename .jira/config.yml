@@ -1,0 +1,10 @@
+deployments:
+  deploymentGating:
+    enabled: true         # Enable the deployment gating feature
+    retry: 50             # Number of times to poll for approval status
+    sleep: 30             # Seconds to wait between polls
+    environments:         # List the environments to gate (add Production here)
+      - Production
+  services:
+    ids:
+      - b:YXJpOmNsb3VkOmdyYXBoOjpzZXJ2aWNlL2E0NGE2MTg5LTVkNzAtNDlkNy04ZWE1LTA5MDc1YjNiMTliZi85ZGUyZjI0OC04MmZjLTExZjAtYWZjMi0wYWZmZWM0NzkxZmY=
